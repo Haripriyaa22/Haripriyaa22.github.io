@@ -1,0 +1,89 @@
+* {
+    list-style: none;
+    font-family: 'Public Sans', sans-serif;
+    font-weight: bolder;
+}
+
+body {
+    background-color: rgb(211,135,255);
+}
+
+.gifbox {
+    text-align: center;
+    font-family: 'Fredoka One', cursive;
+    color: rgb(255, 255, 255);
+    font-variant: small-caps;
+}
+.gifbox img {
+    height: 250px;
+    width: 300px;
+}
+
+.container {
+    font-family: 'Public Sans', sans-serif;
+    position: relative;
+}
+
+.content {
+    padding: 10px 25px;
+    background-color: aliceblue;
+    font-size: 30px;
+    color: rgb(234, 64, 98);
+    position: absolute;
+    left: 40%;
+}
+
+.content li{
+    display: inline;
+}
+
+.timestamp {
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+    display: inline-flex;
+    position: absolute;
+    margin-top: 60px;
+    left: 40%;
+    padding: 10px 10px;
+    background-color: rgb(234, 64, 98);
+}
+
+.li {
+    padding-left: 40px;
+}
+
+.giftbox {
+    display: none;
+    position: absolute;
+    top: 60%;
+    left: 45%
+}
+
+.giftbox :hover {
+    transform: scale(1.2);
+    transition: 1s;
+}
+
+#lockedgift {
+    position: absolute;
+    top: 60%;
+    left: 45%;
+}
+
+@media only screen and (max-width: 600px) {
+    .content {
+        left: 10%;
+    }
+    .timestamp {
+        left: 10%;
+    }
+    .giftbox {
+        top: 75%;
+        left: 30%;
+    }
+    #lockedgift {
+        top: 75%;
+        left: 30%;
+    }
+    
+}
